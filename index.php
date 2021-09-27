@@ -80,11 +80,7 @@ function postMessage($payload) {
 
     // Make a cURL call
 
-    // add our payload passed through the function.
-    $args = http_build_query($payload);
-
-    // Build the full URL call to the API.
-    $callurl = "https://slack.com/api/chat.postMessage" . "?" . $args;
+    $callurl = "https://slack.com/api/chat.postMessage";
 
     // Let's build a cURL query.
   	$ch = curl_init($callurl);

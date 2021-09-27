@@ -6,3 +6,4 @@ List of changes to have the PHP script receiving messages from Slack, process th
 4) change the case when checking the user_change event - it was set to status_change but only user_change actually exists
 5) change the path to access the real_name_normalized
 6) removing TOKEN from the original payload
+7) remove parameters passed with GET method
