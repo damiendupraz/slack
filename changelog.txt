@@ -1,0 +1,1 @@
+List of changes to have the PHP script receiving messages from Slack, process the message and send back a response to Slack
