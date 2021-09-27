@@ -6,8 +6,8 @@ define('CHANNEL', getenv('CHANNEL'));
 http_response_code(200);
 
  // Grab event data from the request
-$input = $_POST['body'];
-$json = json_decode($input, FALSE);
+$input = file_get_contents('php://input');
+$json = json_decode($input, false);
 $type = $json->type;
 
 
