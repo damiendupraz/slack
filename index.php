@@ -20,7 +20,7 @@ switch ($type) {
       'challenge' => $challenge,
     );
     header('Content-type: application/json');
-    print $response;
+    echo json_encode($response);
 
 
   break;
