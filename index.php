@@ -29,7 +29,7 @@ switch ($type) {
 
     switch ($json->event->type) {
 
-      case 'status_change':
+       case 'user_change':
 
         // Grab some data about the user;
         $userid = $json->event->user->id;
