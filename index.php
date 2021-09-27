@@ -88,14 +88,11 @@ function postMessage($payload) {
   	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
   	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
 
-    if (array_key_exists("filename", $payload)) {
-      $callurl = $url . $method;
-      $headers = array("Content-Type: multipart/form-data"); // cURL headers for file uploading
-      curl_setopt($ch, CURLOPT_HEADER, true);
-      curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-      curl_setopt($ch, CURLOPT_POST, 1);
-      curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-    }
+
+    curl_setopt($ch, CURLOPT_HEADER, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
 
     $ch_response = json_decode(curl_exec($ch));
 	
