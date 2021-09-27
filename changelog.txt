@@ -8,3 +8,4 @@ List of changes to have the PHP script receiving messages from Slack, process th
 6) removing TOKEN from the original payload
 7) removing parameters passed with GET method
 8) removing the non relevant part related to file upload (?) for clarity
+9) set up new headers for mime-type and authentication

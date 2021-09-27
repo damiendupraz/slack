@@ -89,6 +89,10 @@ function postMessage($payload) {
   	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
 
 
+    $headers = array(
+        "Content-type: application/json",
+        "Authorization: Bearer " . TOKEN
+    );
     curl_setopt($ch, CURLOPT_HEADER, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
     curl_setopt($ch, CURLOPT_POST, 1);
