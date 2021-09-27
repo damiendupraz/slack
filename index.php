@@ -2,7 +2,8 @@
 define('TOKEN', getenv('TOKEN'));
 define('CHANNEL', getenv('CHANNEL'));
 
-http_response_code(301);
+//the app respond always with HTTP code 200
+http_response_code(200);
 
  // Grab event data from the request
 $input = $_POST['body'];

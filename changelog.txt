@@ -1,1 +1,3 @@
 List of changes to have the PHP script receiving messages from Slack, process the message and send back a response to Slack
+
+1) change the http response code from 301 to 200 - the code 301 is for moved documents only
