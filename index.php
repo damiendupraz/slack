@@ -33,7 +33,7 @@ switch ($type) {
 
         // Grab some data about the user;
         $userid = $json->event->user->id;
-        $username = $json->event->user->real_name_normalized;
+        $username = $json->event->user->profile->real_name_normalized;
         $status_text = $json->event->user->profile->status_text;
         $status_emoji = $json->event->user->profile->status_emoji;
 

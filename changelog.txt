@@ -4,3 +4,4 @@ List of changes to have the PHP script receiving messages from Slack, process th
 2) change the way the JSON message is read and decoded by PHP
 3) add a json_encode before returning response to Slack during the challenge verification phase (url verification phase)
 4) change the case when checking the user_change event - it was set to status_change but only user_change actually exists
+5) change the path to access the real_name_normalized
