@@ -60,7 +60,6 @@ switch ($type) {
         ];
 
         $payload = [
-          'token' => TOKEN,
           'channel' => CHANNEL,
           'attachments' => $attachments,
         ];
